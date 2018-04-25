@@ -1,0 +1,29 @@
+circle-creator( width-size, height-size )
+    border-radius 100%
+    width width-size
+    height height-size
+
+.circle
+    &--container
+        height 220px
+        containers()
+        text-align center
+        display flex
+        flex-direction column
+        justify-content space-between
+
+    &--orange
+        background-color color_principal
+        circle-creator( 170px, 170px )
+        display flex
+        justify-content center
+        align-items center
+        color color_white
+
+    &--black
+        background-color color_secundary
+        circle-creator( 170px, 170px )
+        display flex
+        justify-content center
+        align-items center
+        color color_white

@@ -1,0 +1,24 @@
+.personality
+    &--container
+        display flex
+        justify-content space-evenly
+
+        &__option
+            containers()
+            width 200px
+            margin-bottom 1em
+            text-align center
+
+            h3
+                position relative
+
+                &:after
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    right: 0;
+                    content: '';
+                    position: absolute;
+                    width: 36%;
+                    border-bottom: 1px solid #ff4200;
+                    bottom: -0.5em;
